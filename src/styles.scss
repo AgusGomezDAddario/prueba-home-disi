@@ -1,0 +1,79 @@
+// Customizing Bootstrap with Sass variables:
+// https://getbootstrap.com/docs/5.0/customize/sass/
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.rectinfo {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -20px;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.fondo {
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.fondo_2 {
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.mt-n3 {
+  margin-top: -1rem !important;
+}
+
+.preg_frec {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+
+  .preg_frec a {
+    text-decoration: none;
+    color: inherit;
+
+    .preg_frec p {
+      margin: 0;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.img-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 768px) {
+  .preg-frec {
+    text-align: center;
+    height: 4rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  
+  .img-container {
+    height: 150px;
+  }
+}
